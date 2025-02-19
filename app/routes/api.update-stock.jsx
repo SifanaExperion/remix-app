@@ -1,6 +1,6 @@
 import db from "../db.server";
-import  shopify  from "../shopify.server";
-import { json } from "@remix-run/node";
+// import  shopify  from "../shopify.server";
+// import { json } from "@remix-run/node";
 export async function loader({request}) {
   const shop = "shasky2.myshopify.com";
   const accessToken = "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";
