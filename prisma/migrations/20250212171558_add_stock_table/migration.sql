@@ -7,7 +7,7 @@ CREATE TABLE "ProductStock" (
     "inventoryItemId" TEXT,
     "availableStock" INTEGER NOT NULL,
     "locationId" TEXT NOT NULL,
-    "updatedAt" DATETIME NOT NULL
+    "updatedAt" TIMESTAMP NOT NULL
 );
 
 -- CreateIndex

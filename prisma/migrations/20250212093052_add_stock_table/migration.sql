@@ -1,6 +1,6 @@
 -- CreateTable
 CREATE TABLE "Settings" (
-    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "id" INTEGER NOT NULL PRIMARY KEY,
     "shop" TEXT,
     "name" TEXT NOT NULL,
     "description" TEXT
