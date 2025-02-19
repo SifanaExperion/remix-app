@@ -1,0 +1,37 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "aafec8d5bb1b8b5d03fd1fc56db6f833"
+application_url = "https://clips-committees-universe-rs.trycloudflare.com"
+embedded = true
+name = "Inventory-Management"
+handle = "inventory-management-82"
+
+[webhooks]
+api_version = "2025-01"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/uninstalled" ]
+  uri = "/webhooks/app/uninstalled"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/scopes_update" ]
+  uri = "/webhooks/app/scopes_update"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_inventory,read_orders,read_products,unauthenticated_read_product_inventory,unauthenticated_read_product_listings,unauthenticated_read_product_pickup_locations,write_orders,write_payment_customizations,write_products,read_locations"
+
+[auth]
+redirect_urls = [
+  "https://clips-committees-universe-rs.trycloudflare.com/auth/callback",
+  "https://clips-committees-universe-rs.trycloudflare.com/auth/shopify/callback",
+  "https://clips-committees-universe-rs.trycloudflare.com/api/auth/callback"
+]
+
+[pos]
+embedded = false
+
+[build]
+dev_store_url = "shasky2.myshopify.com"
+automatically_update_urls_on_dev = true
+include_config_on_deploy = true

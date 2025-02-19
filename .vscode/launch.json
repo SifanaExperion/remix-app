@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+      {
+        "name": "Remix Debug (Dev Mode)",
+        "type": "node",
+        "request": "launch",
+        "runtimeExecutable": "npm",
+        "runtimeArgs": ["run", "dev"],
+        "port": 9229,
+        "console": "integratedTerminal",
+        "skipFiles": ["<node_internals>/**"]
+      },
+      {
+        "name": "Remix Debug (Attach)",
+        "type": "node",
+        "request": "attach",
+        "port": 9229,
+        "restart": true,
+        "skipFiles": ["<node_internals>/**"],
+        
+      }
+    ]
+  }
+  
